@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSGO Stats</title>
+    <link rel="stylesheet" href="{% static 'css/styles_csgo.css' %}">
+<header style="margin-top: 300px;">
+    <h1>Progression</h1>
+</header>
+</head>
+<body>
+    <div class="rounded-square square-1">
+        <div class="hours">
+            Hours: {{ hours }}
+        </div>
+    </div>
+    <div class="rounded-square square-2">
+        <div class="kills">
+            Kills: {{ kills }}
+        </div>
+    </div>
+    <div class="rounded-square square-3">
+        <div class="deaths">
+            Deaths: {{ deaths }}
+        </div>
+    </div>
+    <div class="rounded-square square-4">
+        <div class="wins">
+            Wins: {{ wins }}
+        </div>
+    </div>
+    <div class="rounded-square square-5">
+        <div class="bombs_planted">
+            Planted: {{ bombs_planted }}
+        </div>
+    </div>
+    <div class="rounded-square square-6">
+        <div class="kd">
+            K/D: {{ kd }}
+        </div>
+    </div>
+
+</body>
+</html>
